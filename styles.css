@@ -68,7 +68,8 @@ a:hover {
 
 .appointment {
     text-align: center;
-    margin-top: 2em;
+    margin: 2em 0;
+    padding-bottom: 2em; /* Ensure space before the footer */
 }
 
 .appointment-button {
