@@ -84,3 +84,10 @@ a:hover {
 .appointment-button:hover {
     background-color: #005bb5;
 }
+
+.team-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1em auto;
+}
