@@ -38,6 +38,19 @@ main {
 .container {
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 1em;
+}
+
+.banner {
+    background-color: #f4f4f4;
+    padding: 1em;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.banner h2 {
+    margin: 0;
+    color: #333;
 }
 
 h1, h2 {
