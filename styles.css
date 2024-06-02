@@ -211,10 +211,34 @@ a:hover {
     margin: 0 1em;
 }
 
+/* Contact project section styles */
+.contact-project {
+    text-align: center;
+    margin: 3em 0;
+}
+
+.contact-project p {
+    font-size: 1.3em; /* Slightly larger font size for readability */
+    color: #666; /* Softer color for the paragraph */
+    margin-bottom: 1.5em; /* Added space before the button */
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #000; /* Black background for consistency */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1em; /* Added margin-top to avoid it sticking to the bottom */
+}
+
+.contact-button:hover {
+    background-color: #333; /* Slightly lighter black for hover */
+}
+
 /* Footer styles */
 footer {
     background-color: #111;
     color: #fff;
-    text-align: center;
-    padding: 1em 0;
-}
+   
