@@ -142,6 +142,17 @@ appoinment-button:hover {
     margin: 1em auto;
 }
 
+/* Additional message section styles */
+.additional-message {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.additional-message h2 {
+    font-size: 1.5em; /* Fair font size for the additional message */
+    margin: 0.5em 0;
+}
+
 /* Footer styles */
 footer {
     background-color: #111;
