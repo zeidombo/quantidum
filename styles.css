@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    font-size: 18px; /* Increased font size */
+    font-size: 16px; /* Restored original font size */
 }
 
 /* Header and navigation styles */
@@ -45,7 +45,7 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.1em; /* Larger font size for menu items */
+    font-size: 1em; /* Restored original font size for menu items */
     text-transform: uppercase; /* Uppercase menu items */
 }
 
@@ -66,7 +66,7 @@ header nav ul li a:hover {
 }
 
 .hero h2 {
-    font-size: 2.5em; /* Larger font size for visibility */
+    font-size: 1.5em; /* Restored original font size */
     margin: 0;
     max-width: 800px;
     line-height: 1.4; /* Improve readability */
@@ -76,7 +76,7 @@ header nav ul li a:hover {
 .hero .message {
     max-width: 800px;
     line-height: 1.4;
-    font-size: 2em;
+    font-size: 1.5em; /* Restored original font size */
 }
 
 /* Main container styles */
