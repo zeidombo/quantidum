@@ -53,39 +53,15 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Hero section styles for home page */
-.hero {
-    background-color: #222; /* Slightly lighter than header */
-    color: #fff;
-    height: 354px; /* 0.75 times the previous 472px */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0 1em;
-}
-
-.hero h2 {
-    font-size: 1.8em; /* Restored original font size */
-    margin: 0;
-    max-width: 800px;
-    line-height: 1.4; /* Improve readability */
-    color: #fff; /* White font color */
-}
-
-.hero .message {
-    max-width: 800px;
-    line-height: 1.4;
-    font-size: 1.8em; /* Restored original font size */
-}
-
 /* Intro message styles */
 .intro-message {
-    color: #333; /* Text color */
+    background-color: #000; /* Black background for intro message */
+    color: #fff; /* White text color */
     text-align: center;
     font-size: 1.4em; /* Adjusted font size */
     line-height: 1.6;
     margin-top: 1em; /* Add some space between sections */
+    padding: 2em 0; /* Add padding for better spacing */
 }
 
 .intro-content p {
@@ -101,51 +77,6 @@ main {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 1em;
-}
-
-.banner {
-    background-color: #f4f4f4;
-    padding: 1em;
-    text-align: center;
-    margin-bottom: 1.5em;
-}
-
-.banner h2 {
-    margin: 0;
-    color: #333;
-}
-
-h1, h2 {
-    color: #333;
-}
-
-a {
-    color: #0066cc;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Appointment section styles */
-.appointment {
-    text-align: center;
-    margin: 2em 0;
-    padding-bottom: 2em; /* Ensure space before the footer */
-}
-
-.appointment-button {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff;
-    background-color: #0066cc;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.appointment-button:hover {
-    background-color: #005bb5;
 }
 
 .team-image {
