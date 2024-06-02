@@ -131,7 +131,7 @@ a:hover {
     border-radius: 5px;
 }
 
-appoinment-button:hover {
+.appointment-button:hover {
     background-color: #005bb5;
 }
 
@@ -140,6 +140,31 @@ appoinment-button:hover {
     max-width: 100%;
     height: auto;
     margin: 1em auto;
+}
+
+/* Team message section styles */
+.team-message {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.team-message p {
+    font-size: 1.2em; /* Slightly larger font size for readability */
+    color: #666; /* Softer color for the paragraph */
+    margin-bottom: 1em;
+}
+
+.services-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #0066cc;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.services-button:hover {
+    background-color: #005bb5;
 }
 
 /* Result-oriented section styles */
