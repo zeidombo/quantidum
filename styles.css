@@ -4,11 +4,12 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    font-size: 18px; /* Increased font size */
 }
 
 /* Header and navigation styles */
 header {
-    background-color: #333;
+    background-color: #111; /* Darker background for the header */
     color: #fff;
     height: 62px;
     display: flex;
@@ -44,6 +45,8 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 1.1em; /* Larger font size for menu items */
+    text-transform: uppercase; /* Uppercase menu items */
 }
 
 header nav ul li a:hover {
@@ -52,7 +55,7 @@ header nav ul li a:hover {
 
 /* Hero section styles for home page */
 .hero {
-    background-color: #444; /* Slightly lighter than header */
+    background-color: #222; /* Slightly lighter than header */
     color: #fff;
     height: 354px; /* 0.75 times the previous 472px */
     display: flex;
@@ -63,10 +66,17 @@ header nav ul li a:hover {
 }
 
 .hero h2 {
-    font-size: 2em; /* Larger font size for visibility */
+    font-size: 2.5em; /* Larger font size for visibility */
     margin: 0;
     max-width: 800px;
     line-height: 1.4; /* Improve readability */
+    color: #fff; /* White font color */
+}
+
+.hero .message {
+    max-width: 800px;
+    line-height: 1.4;
+    font-size: 2em;
 }
 
 /* Main container styles */
@@ -121,7 +131,7 @@ a:hover {
     border-radius: 5px;
 }
 
-.appointment-button:hover {
+appoinment-button:hover {
     background-color: #005bb5;
 }
 
@@ -134,7 +144,7 @@ a:hover {
 
 /* Footer styles */
 footer {
-    background-color: #333;
+    background-color: #111;
     color: #fff;
     text-align: center;
     padding: 1em 0;
