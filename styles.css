@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    font-size: 16px; /* Restored original font size */
+    font-size: 16px;
 }
 
 /* Header and navigation styles */
@@ -79,6 +79,16 @@ header nav ul li a:hover {
     font-size: 1.5em; /* Restored original font size */
 }
 
+/* Intro message styles */
+.intro-message {
+    background-color: #333; /* Slightly lighter than the hero section */
+    color: #fff;
+    padding: 2em;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
 /* Main container styles */
 main {
     padding: 2em;
@@ -131,7 +141,7 @@ a:hover {
     border-radius: 5px;
 }
 
-appoinment-button:hover {
+.appointment-button:hover {
     background-color: #005bb5;
 }
 
