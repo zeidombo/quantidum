@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    font-size: 16px;
+    font-size: 18px; /* Adjusted font size */
 }
 
 /* Header and navigation styles */
@@ -66,7 +66,7 @@ header nav ul li a:hover {
 }
 
 .hero h2 {
-    font-size: 1.5em; /* Restored original font size */
+    font-size: 1.8em; /* Restored original font size */
     margin: 0;
     max-width: 800px;
     line-height: 1.4; /* Improve readability */
@@ -76,16 +76,16 @@ header nav ul li a:hover {
 .hero .message {
     max-width: 800px;
     line-height: 1.4;
-    font-size: 1.5em; /* Restored original font size */
+    font-size: 1.8em; /* Restored original font size */
 }
 
 /* Intro message styles */
 .intro-message {
     color: #333; /* Text color */
-    padding: 2em;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.4em; /* Adjusted font size */
     line-height: 1.6;
+    margin-top: 1em; /* Add some space between sections */
 }
 
 .intro-content p {
