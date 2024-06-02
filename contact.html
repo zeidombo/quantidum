@@ -26,7 +26,7 @@
     <main class="container">
         <section class="contact-form">
             <h2>Contact Us</h2>
-            <form action="https://formspree.io/f/xnqekdkq" method="POST">
+            <form id="contactForm" action="https://formspree.io/f/xnqekdkq" method="POST">
                 <label for="email">Your email:</label>
                 <input type="email" id="email" name="email" required>
 
@@ -37,10 +37,37 @@
 
                 <button type="submit">Send</button>
             </form>
+            <div id="thankYouMessage" style="display: none;">
+                <p>Thank you for contacting us! We'll get back to you soon.</p>
+            </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Quantidum. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Submit the form via Ajax
+            var formData = new FormData(this);
+
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'https://formspree.io/f/xnqekdkq', true);
+            xhr.setRequestHeader('Accept', 'application/json');
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200 || xhr.status === 0) { // Successful form submission
+                        document.getElementById('contactForm').style.display = 'none'; // Hide the form
+                        document.getElementById('thankYouMessage').style.display = 'block'; // Show the thank you message
+                    } else {
+                        console.error(xhr.statusText); // Log any errors
+                    }
+                }
+            };
+            xhr.send(formData);
+        });
+    </script>
 </body>
 </html>
