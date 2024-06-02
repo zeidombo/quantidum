@@ -1,3 +1,4 @@
+/* General styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,26 +6,29 @@ body {
     line-height: 1.6;
 }
 
-header, footer {
+/* Header and navigation styles */
+header {
     background-color: #333;
     color: #fff;
-    text-align: center;
-    padding: 1em 0;
-}
-
-nav {
+    height: 62px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 1em;
 }
 
-nav img.logo {
+header nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+header nav img.logo {
     height: 40px;
     margin-right: 1em;
 }
 
-nav ul {
+header nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -33,19 +37,37 @@ nav ul {
     justify-content: flex-end;
 }
 
-nav ul li {
+header nav ul li {
     margin: 0 10px;
 }
 
-nav ul li a {
+header nav ul li a {
     color: #fff;
     text-decoration: none;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Hero section styles */
+.hero {
+    background-color: #444;
+    color: #fff;
+    height: 472px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1em;
+}
+
+.hero h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+/* Main container styles */
 main {
     padding: 2em;
 }
@@ -81,6 +103,7 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Appointment section styles */
 .appointment {
     text-align: center;
     margin: 2em 0;
@@ -105,4 +128,12 @@ a:hover {
     max-width: 100%;
     height: auto;
     margin: 1em auto;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
 }
