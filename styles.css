@@ -266,6 +266,26 @@ footer {
     color: #fff;
 }
 
+/* Services hero section styles */
+.services-hero {
+    background-color: grey; /* Grey background color */
+    color: #fff;
+    height: 190px; /* Height of 190px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.services-hero h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #fff;
+}
+
 /* Contact form styles */
 .contact-form {
     max-width: 800px;
