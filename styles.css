@@ -127,13 +127,13 @@ a:hover {
     display: inline-block;
     padding: 10px 20px;
     color: #fff;
-    background-color: #0066cc;
+    background-color: #000; /* Changed background color to black */
     text-decoration: none;
     border-radius: 5px;
 }
 
 .appointment-button:hover {
-    background-color: #005bb5;
+    background-color: #333; /* Slightly lighter black for hover */
 }
 
 .team-image {
