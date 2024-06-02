@@ -45,7 +45,7 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1em; /* Restored original font size for menu items */
+    font-size: 0.8em; /* Adjusted font size for menu items */
     text-transform: uppercase; /* Uppercase menu items */
 }
 
@@ -81,12 +81,15 @@ header nav ul li a:hover {
 
 /* Intro message styles */
 .intro-message {
-    background-color: #333; /* Slightly lighter than the hero section */
-    color: #fff;
+    color: #333; /* Text color */
     padding: 2em;
     text-align: center;
     font-size: 1.2em;
     line-height: 1.6;
+}
+
+.intro-content p {
+    margin: 0.5em 0; /* Adjusted spacing between lines */
 }
 
 /* Main container styles */
