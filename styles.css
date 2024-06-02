@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    font-size: 18px; /* Adjusted font size */
+    font-size: 16px; /* Restored original font size */
 }
 
 /* Header and navigation styles */
@@ -45,7 +45,7 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 0.8em; /* Adjusted font size for menu items */
+    font-size: 1em; /* Restored original font size for menu items */
     text-transform: uppercase; /* Uppercase menu items */
 }
 
@@ -53,19 +53,30 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Intro message styles */
-.intro-message {
-    background-color: #000; /* Black background for intro message */
-    color: #fff; /* White text color */
+/* Hero section styles for home page */
+.hero {
+    background-color: #222; /* Slightly lighter than header */
+    color: #fff;
+    height: 354px; /* 0.75 times the previous 472px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    font-size: 1.4em; /* Adjusted font size */
-    line-height: 1.6;
-    margin-top: 1em; /* Add some space between sections */
-    padding: 2em 0; /* Add padding for better spacing */
+    padding: 0 1em;
 }
 
-.intro-content p {
-    margin: 0.5em 0; /* Adjusted spacing between lines */
+.hero h2 {
+    font-size: 1.5em; /* Restored original font size */
+    margin: 0;
+    max-width: 800px;
+    line-height: 1.4; /* Improve readability */
+    color: #fff; /* White font color */
+}
+
+.hero .message {
+    max-width: 800px;
+    line-height: 1.4;
+    font-size: 1.5em; /* Restored original font size */
 }
 
 /* Main container styles */
@@ -77,6 +88,51 @@ main {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 1em;
+}
+
+.banner {
+    background-color: #f4f4f4;
+    padding: 1em;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.banner h2 {
+    margin: 0;
+    color: #333;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Appointment section styles */
+.appointment {
+    text-align: center;
+    margin: 2em 0;
+    padding-bottom: 2em; /* Ensure space before the footer */
+}
+
+.appointment-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #0066cc;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+appoinment-button:hover {
+    background-color: #005bb5;
 }
 
 .team-image {
