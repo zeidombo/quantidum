@@ -142,15 +142,21 @@ appoinment-button:hover {
     margin: 1em auto;
 }
 
-/* Additional message section styles */
-.additional-message {
-    text-align: center;
+/* Result-oriented section styles */
+.result-oriented {
     margin: 2em 0;
+    text-align: left; /* Align text to the left */
 }
 
-.additional-message h2 {
-    font-size: 1.5em; /* Fair font size for the additional message */
-    margin: 0.5em 0;
+.result-oriented h2 {
+    font-size: 2em; /* Make the title stand out */
+    margin-bottom: 0.5em;
+    color: #333; /* Darker color for emphasis */
+}
+
+.result-oriented p {
+    font-size: 1.2em; /* Slightly larger font size for readability */
+    color: #666; /* Softer color for the paragraph */
 }
 
 /* Footer styles */
