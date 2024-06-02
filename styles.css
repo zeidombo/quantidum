@@ -144,7 +144,7 @@ appoinment-button:hover {
 
 /* Additional message section styles */
 .additional-message {
-    text-align: center;
+    text-align: left; /* Align text to the left */
     margin: 2em 0;
 }
 
