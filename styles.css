@@ -82,6 +82,7 @@ header nav ul li a:hover {
 /* Main container styles */
 main {
     padding: 2em;
+    padding-bottom: 4em; /* Added extra padding to ensure space before the footer */
 }
 
 .container {
@@ -146,6 +147,7 @@ a:hover {
 .team-message {
     text-align: center;
     margin-top: 1em;
+    margin-bottom: 3em; /* Added margin to avoid sticking to the footer */
 }
 
 .team-message p {
