@@ -287,6 +287,7 @@ footer {
 }
 
 .contact-form input,
+.contact-form select,
 .contact-form textarea {
     width: 100%;
     padding: 0.5em;
@@ -299,7 +300,7 @@ footer {
     display: inline-block;
     padding: 10px 20px;
     color: #fff;
-    background-color: #0066cc;
+    background-color: #000; /* Black background color */
     text-decoration: none;
     border-radius: 5px;
     border: none;
@@ -307,5 +308,5 @@ footer {
 }
 
 .contact-form button:hover {
-    background-color: #005bb5;
+    background-color: #333; /* Slightly lighter black for hover */
 }
