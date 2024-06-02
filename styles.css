@@ -50,11 +50,11 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Hero section styles */
+/* Hero section styles for home page */
 .hero {
-    background-color: #444;
+    background-color: #444; /* Slightly lighter than header */
     color: #fff;
-    height: 472px;
+    height: 354px; /* 0.75 times the previous 472px */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,8 +63,10 @@ header nav ul li a:hover {
 }
 
 .hero h2 {
-    font-size: 1.5em;
+    font-size: 2em; /* Larger font size for visibility */
     margin: 0;
+    max-width: 800px;
+    line-height: 1.4; /* Improve readability */
 }
 
 /* Main container styles */
