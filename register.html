@@ -54,8 +54,13 @@
             })
             .then(response => response.text())
             .then(responseText => {
-                alert('Registration successful!');
-                event.target.reset();
+                if (responseText === 'Success') {
+                    alert('Registration successful!');
+                    event.target.reset();
+                } else {
+                    console.error('Error:', responseText);
+                    alert('Registration failed: ' + responseText);
+                }
             })
             .catch(error => {
                 console.error('Error:', error);
