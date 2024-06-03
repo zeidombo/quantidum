@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h2>Registration Form</h2>
-        <form id="registrationForm">
+        <form id="RegistrationForm"> <!-- Correct form ID here -->
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -36,7 +36,7 @@
     </div>
 
     <script>
-        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+        document.getElementById('RegistrationForm').addEventListener('submit', function(event) { // Correct form ID here
             event.preventDefault();
 
             const formData = new FormData(event.target);
@@ -54,6 +54,7 @@
             })
             .then(response => response.text())
             .then(responseText => {
+                console.log('Response Text:', responseText); // Log the response text
                 if (responseText === 'Success') {
                     alert('Registration successful!');
                     event.target.reset();
