@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h2>Registration Form</h2>
-        <form id="RegistrationForm">
+        <form id="registrationForm" action="https://script.google.com/macros/s/AKfycbyxkh6lyZXs76JAas7cLaH_KkKnr04auCHg7ECn32bvx3e4-_FawEsRhxoDVv8k6Hjb/exec" method="POST">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -36,7 +36,7 @@
     </div>
 
     <script>
-        document.getElementById('RegistrationForm').addEventListener('submit', function(event) {
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
             event.preventDefault();
 
             const formData = new FormData(event.target);
@@ -45,7 +45,7 @@
                 data[key] = value;
             });
 
-            fetch('https://script.google.com/macros/s/AKfycbzJHCI8RYHsxCdJYXAb688lyZxLm0wP197Izht4jG_S3tt7V2gTVAo0dVsN24uSFmEZ/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbyxkh6lyZXs76JAas7cLaH_KkKnr04auCHg7ECn32bvx3e4-_FawEsRhxoDVv8k6Hjb/exec', {
                 method: 'POST',
                 body: JSON.stringify(data),
                 headers: {
