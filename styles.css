@@ -140,10 +140,11 @@ a:hover {
     background-color: #000; /* Changed background color to black */
     text-decoration: none;
     border-radius: 5px;
+    transition: color 0.3s; /* Smooth transition for color change */
 }
 
 .appointment-button:hover {
-    background-color: grey; /* Change background color to grey on hover */
+    color: grey; /* Change text color to grey on hover */
 }
 
 .team-image {
@@ -174,10 +175,11 @@ a:hover {
     text-decoration: none;
     border-radius: 5px;
     margin-top: 1em; /* Added margin-top to avoid it sticking to the bottom */
+    transition: color 0.3s; /* Smooth transition for color change */
 }
 
 .services-button:hover {
-    background-color: grey; /* Change background color to grey on hover */
+    color: grey; /* Change text color to grey on hover */
 }
 
 /* Result-oriented section styles */
@@ -241,10 +243,11 @@ a:hover {
     text-decoration: none;
     border-radius: 5px;
     margin-top: 1em; /* Added margin-top to avoid it sticking to the bottom */
+    transition: color 0.3s; /* Smooth transition for color change */
 }
 
 .contact-button:hover {
-    background-color: grey; /* Change background color to grey on hover */
+    color: grey; /* Change text color to grey on hover */
 }
 
 /* Footer styles */
@@ -335,8 +338,9 @@ footer {
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    transition: color 0.3s; /* Smooth transition for color change */
 }
 
 .contact-form button:hover {
-    background-color: grey; /* Change background color to grey on hover */
+    color: grey; /* Change text color to grey on hover */
 }
