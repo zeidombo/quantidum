@@ -120,7 +120,7 @@ a:hover {
 
 .contact-form label {
     margin-bottom: 0.5em;
-    font-weight: bold;
+    font-weight: normal; /* Make labels not bold */
 }
 
 .contact-form input,
@@ -137,9 +137,11 @@ a:hover {
 }
 
 .contact-form button {
+    padding: 0.3em 0.6em; /* Make the button small */
     background-color: #000;
     color: #fff;
     cursor: pointer;
+    font-size: 0.9em; /* Slightly smaller font size for the button */
 }
 
 .contact-form button:hover {
