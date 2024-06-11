@@ -87,6 +87,7 @@ body {
     max-width: 800px;
     line-height: 1.4;
     color: rgba(255, 255, 255, 0.8); /* Less transparent caption */
+    text-transform: uppercase; /* Make text uppercase */
 }
 
 /* Main container styles */
@@ -338,7 +339,10 @@ footer {
 .team-member p {
     margin-top: 0.5em;
     font-size: 1em;
-    color: #333;
-    font-weight: bold;
     font-family: 'Trebuchet MS', sans-serif; /* Cooler font */
+}
+
+.team-member p strong {
+    display: block;
+    font-weight: bold;
 }
