@@ -79,6 +79,8 @@ body {
     text-align: center;
     width: 100%; /* Stretch across full width */
     padding: 0 1em;
+    margin: 0; /* Ensure no margin to cover full width */
+    box-sizing: border-box;
 }
 
 .hero h2 {
@@ -337,7 +339,7 @@ footer {
 }
 
 .team-member p {
-    margin-top: 0.5em;
+    margin-top: 0.3em; /* Reduced margin-top */
     font-size: 1em;
     font-family: 'Trebuchet MS', sans-serif; /* Cooler font */
 }
@@ -345,4 +347,9 @@ footer {
 .team-member p strong {
     display: block;
     font-weight: bold;
+}
+
+.team-member p .role {
+    font-size: 0.9em; /* Smaller font size for role */
+    margin-top: 0.2em; /* Reduced margin-top */
 }
