@@ -20,6 +20,7 @@ header {
     top: 0; /* Position at the top of the page */
     width: 100%; /* Full width */
     z-index: 1000; /* Ensure it stays above other elements */
+    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
 }
 
 header nav {
@@ -35,7 +36,7 @@ header nav img.logo {
 
 header nav ul {
     list-style: none;
-    padding: 0;
+    padding: 0 1em; /* Add padding to ensure text is not cut off */
     margin: 0;
     display: flex;
     flex-grow: 1;
@@ -202,7 +203,7 @@ a:hover {
     margin: 3em 0;
 }
 
-trusted-by h2 {
+.trusted-by h2 {
     font-size: 2em;
     margin-bottom: 1em;
     color: #333; /* Darker color for emphasis */
