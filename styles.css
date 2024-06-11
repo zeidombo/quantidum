@@ -4,23 +4,22 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    font-size: 16px; /* Restored original font size */
 }
 
 /* Header and navigation styles */
 header {
-    background-color: #111; /* Darker background for the header */
+    background-color: #111;
     color: #fff;
     height: 62px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 1em;
-    position: fixed; /* Fix the header */
-    top: 0; /* Position at the top of the page */
-    width: 100%; /* Full width */
-    z-index: 1000; /* Ensure it stays above other elements */
-    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
 }
 
 header nav {
@@ -36,7 +35,7 @@ header nav img.logo {
 
 header nav ul {
     list-style: none;
-    padding: 0 1em; /* Add padding to ensure text is not cut off */
+    padding: 0 1em;
     margin: 0;
     display: flex;
     flex-grow: 1;
@@ -50,67 +49,48 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1em; /* Restored original font size for menu items */
-    text-transform: uppercase; /* Uppercase menu items */
+    font-size: 1em;
+    text-transform: uppercase;
 }
 
 header nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Add top padding to body content to avoid content being hidden under the fixed header */
 body {
-    padding-top: 62px; /* Same height as the header */
+    padding-top: 62px;
 }
 
-/* Hero section styles for home page */
-.hero {
-    background-color: #222; /* Slightly lighter than header */
+/* Hero section styles */
+.contact-hero, .services-hero {
+    background-color: grey;
     color: #fff;
-    height: 354px; /* 0.75 times the previous 472px */
+    height: 190px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 1em;
-}
-
-.hero h2 {
-    font-size: 1.5em; /* Restored original font size */
+    width: 100%;
     margin: 0;
-    max-width: 800px;
-    line-height: 1.4; /* Improve readability */
-    color: #fff; /* White font color */
+    padding: 0;
 }
 
-.hero .message {
-    max-width: 800px;
-    line-height: 1.4;
-    font-size: 1.5em; /* Restored original font size */
+.contact-hero h1, .services-hero h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #fff;
 }
 
 /* Main container styles */
 main {
     padding: 2em;
-    padding-bottom: 4em; /* Added extra padding to ensure space before the footer */
+    padding-bottom: 4em;
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 1em;
-}
-
-.banner {
-    background-color: #f4f4f4;
-    padding: 1em;
-    text-align: center;
-    margin-bottom: 1.5em;
-}
-
-.banner h2 {
-    margin: 0;
-    color: #333;
 }
 
 h1, h2 {
@@ -126,183 +106,44 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Appointment section styles */
-.appointment {
-    text-align: center;
-    margin: 2em 0;
-    padding-bottom: 2em; /* Ensure space before the footer */
-}
-
-.appointment-button {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff;
-    background-color: #000; /* Changed background color to black */
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.appointment-button:hover {
-    background-color: #333; /* Slightly lighter black for hover */
-}
-
-.team-image {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 1em auto;
-}
-
-/* Team message section styles */
-.team-message {
-    text-align: center;
-    margin-top: 1em;
-    margin-bottom: 3em; /* Added margin-bottom for spacing */
-}
-
-.team-message p {
-    font-size: 1.1em; /* Slightly larger font size for readability */
-    color: #333;
-    line-height: 1.6; /* Improve readability */
-}
-
-.team-message a {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff;
-    background-color: #000; /* Changed background color to black */
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 1em; /* Added margin-top to avoid it sticking to the bottom */
-}
-
-.team-message a:hover {
-    background-color: #333; /* Slightly lighter black for hover */
-}
-
-/* Services section styles */
-.services {
-    margin-top: 2em; /* Added margin-top for spacing */
-    padding-bottom: 2em; /* Added padding-bottom to ensure spacing */
-    text-align: left; /* Align text to the left */
-}
-
-.services h2 {
-    font-size: 2em; /* Make the title stand out */
-    margin-bottom: 0.5em;
-    color: #333; /* Darker color for emphasis */
-}
-
-.services p {
-    font-size: 1.2em; /* Slightly larger font size for readability */
-    color: #666; /* Softer color for the paragraph */
-}
-
-.services-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.service {
-    background-color: #f4f4f4;
-    border: 1px solid #ccc; /* Border for better separation */
-    border-radius: 5px;
-    padding: 1em;
-    width: calc(50% - 1em); /* Adjusted width calculation */
+/* Contact form styles */
+.contact-info address {
+    font-style: normal;
+    line-height: 1.6;
     margin-bottom: 1em;
 }
 
-.service h3 {
-    font-size: 1.5em; /* Larger font size for service titles */
-    margin-top: 0;
-    color: #333;
-}
-
-.service p {
-    font-size: 1.1em; /* Slightly larger font size for readability */
-    color: #666; /* Softer color for the paragraph */
-}
-
-.services-button {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff;
-    background-color: #000; /* Changed background color to black */
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 1em; /* Added margin-top to avoid it sticking to the bottom */
-}
-
-.services-button:hover {
-    background-color: #333; /* Slightly lighter black for hover */
-}
-
-/* Result-oriented section styles */
-.result-oriented {
-    margin: 2em 0;
-    text-align: left; /* Align text to the left */
-}
-
-.result-oriented h2 {
-    font-size: 2em; /* Make the title stand out */
-    margin-bottom: 0.5em;
-    color: #333; /* Darker color for emphasis */
-}
-
-.result-oriented p {
-    font-size: 1.2em; /* Slightly larger font size for readability */
-    color: #666; /* Softer color for the paragraph */
-}
-
-/* Trusted by section styles */
-.trusted-by {
-    text-align: center;
-    margin: 3em 0;
-}
-
-.trusted-by h2 {
-    font-size: 2em;
-    margin-bottom: 1em;
-    color: #333; /* Darker color for emphasis */
-}
-
-.trusted-by .logos {
+.contact-form form {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.trusted-by .logos img {
-    max-height: 60px;
-    margin: 0 1em;
+.contact-form label {
+    margin-bottom: 0.5em;
+    font-weight: bold;
 }
 
-/* Contact project section styles */
-.contact-project {
-    text-align: center;
-    margin: 3em 0;
+.contact-form input,
+.contact-form select,
+.contact-form textarea,
+.contact-form button {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.contact-project p {
-    font-size: 1.3em; /* Slightly larger font size for readability */
-    color: #666; /* Softer color for the paragraph */
-    margin-bottom: 1.5em; /* Added space before the button */
-}
-
-.contact-button {
-    display: inline-block;
-    padding: 10px 20px;
+.contact-form button {
+    background-color: #000;
     color: #fff;
-    background-color: #000; /* Black background for consistency */
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 1em; /* Added margin-top to avoid it sticking to the bottom */
+    cursor: pointer;
 }
 
-.contact-button:hover {
-    background-color: #333; /* Slightly lighter black for hover */
+.contact-form button:hover {
+    background-color: #333;
 }
 
 /* Footer styles */
@@ -310,46 +151,6 @@ footer {
     background-color: #111;
     color: #fff;
     text-align: center;
-    padding: 1.5em 0; /* Increased padding for better visibility */
-    margin-top: 2em; /* Ensure there's space above the footer */
-}
-
-/* Contact hero section styles */
-.contact-hero {
-    background-color: grey; /* Grey background color */
-    color: #fff;
-    height: 190px; /* Height of 190px */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.contact-hero h1 {
-    font-size: 2.5em;
-    margin: 0;
-    color: #fff;
-}
-
-/* Services hero section styles */
-.services-hero {
-    background-color: grey; /* Grey background color */
-    color: #fff;
-    height: 190px; /* Height of 190px */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.services-hero h1 {
-    font-size: 2.5em;
-    margin: 0;
-    color: #fff;
+    padding: 1.5em 0;
+    margin-top: 2em;
 }
