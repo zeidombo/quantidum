@@ -150,23 +150,6 @@ a:hover {
     background-color: #333;
 }
 
-/* Name container styles */
-.name-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.name-container .input-group {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    margin-right: 1em;
-}
-
-.name-container .input-group:last-child {
-    margin-right: 0;
-}
-
 /* Footer styles */
 footer {
     background-color: #111;
