@@ -72,11 +72,12 @@ body {
 .hero {
     background-color: #222;
     color: #fff;
-    height: 354px;
+    height: 200px; /* Reduced height */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    width: 100%; /* Stretch across full width */
     padding: 0 1em;
 }
 
@@ -85,7 +86,7 @@ body {
     margin: 0;
     max-width: 800px;
     line-height: 1.4;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.8); /* Less transparent caption */
 }
 
 /* Main container styles */
@@ -194,59 +195,19 @@ a:hover {
 }
 
 .result-oriented p {
-    font-size: 1.2em;
+    font-size: 1.1em;
+    line-height: 1.6;
     color: #666;
 }
 
-/* Trusted by section styles */
-.trusted-by {
-    text-align: center;
-    margin: 3em 0;
+.result-oriented ul {
+    padding-left: 1.2em;
 }
 
-.trusted-by h2 {
-    font-size: 2em;
-    margin-bottom: 1em;
-    color: #333;
-}
-
-.trusted-by .logos {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.trusted-by .logos img {
-    max-height: 60px;
-    margin: 0 1em;
-}
-
-/* Contact project section styles */
-.contact-project {
-    text-align: center;
-    margin: 3em 0;
-}
-
-.contact-project p {
-    font-size: 1.3em;
+.result-oriented ul li {
+    font-size: 1.1em;
     color: #666;
-    margin-bottom: 1.5em;
-}
-
-.contact-button {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff;
-    background-color: #000;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 1em;
-    transition: color 0.3s;
-}
-
-.contact-button:hover {
-    color: grey;
+    margin-bottom: 0.5em;
 }
 
 /* Footer styles */
@@ -379,4 +340,5 @@ footer {
     font-size: 1em;
     color: #333;
     font-weight: bold;
+    font-family: 'Trebuchet MS', sans-serif; /* Cooler font */
 }
