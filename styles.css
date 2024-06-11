@@ -16,6 +16,10 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 1em;
+    position: fixed; /* Fix the header */
+    top: 0; /* Position at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it stays above other elements */
 }
 
 header nav {
@@ -51,6 +55,11 @@ header nav ul li a {
 
 header nav ul li a:hover {
     text-decoration: underline;
+}
+
+/* Add top padding to body content to avoid content being hidden under the fixed header */
+body {
+    padding-top: 62px; /* Same height as the header */
 }
 
 /* Hero section styles for home page */
