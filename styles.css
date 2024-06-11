@@ -137,11 +137,13 @@ a:hover {
 }
 
 .contact-form button {
-    padding: 0.3em 0.6em; /* Make the button small */
+    padding: 0.3em 1em; /* Make the button small */
     background-color: #000;
     color: #fff;
     cursor: pointer;
     font-size: 0.9em; /* Slightly smaller font size for the button */
+    width: auto; /* Make the button width auto */
+    align-self: flex-start; /* Align button to the left */
 }
 
 .contact-form button:hover {

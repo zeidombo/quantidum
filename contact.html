@@ -80,8 +80,10 @@
             // Submit the form via Ajax
             var formData = new FormData(this);
 
-            // Ensure the full text of the selected help option is sent
-            formData.set('help', document.getElementById('help').selectedOptions[0].text);
+            // Extract the part before the hyphen
+            var helpText = document.getElementById('help').selectedOptions[0].text;
+            var helpTextBeforeHyphen = helpText.split(' - ')[0];
+            formData.set('help', helpTextBeforeHyphen);
 
             var xhr = new XMLHttpRequest();
             xhr.open('POST', 'https://script.google.com/macros/s/AKfycbyLmIwZmmxZQHd5DcRH4eRl76xqnUqCKdpPoXNcBHAI0-CPPI99i2ye99cGLmSBGk_qqg/exec', true);
