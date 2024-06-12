@@ -4,43 +4,28 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    font-size: 16px; /* Restored original font size */
 }
 
-/* Header and navigation styles */
 header {
-    background-color: #111; /* Darker background for the header */
+    background: #333;
     color: #fff;
-    height: 62px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 1em;
-    position: fixed; /* Fix the header */
-    top: 0; /* Position at the top of the page */
-    width: 100%; /* Full width */
-    z-index: 1000; /* Ensure it stays above other elements */
-    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+    padding: 10px 0;
 }
 
 header nav {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
-}
-
-header nav img.logo {
-    height: 40px;
-    margin-right: 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 header nav ul {
     list-style: none;
-    padding: 0 1em; /* Add padding to ensure text is not cut off */
-    margin: 0;
     display: flex;
-    flex-grow: 1;
-    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
 }
 
 header nav ul li {
@@ -50,373 +35,130 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1em; /* Restored original font size for menu items */
-    text-transform: uppercase; /* Uppercase menu items */
+    padding: 5px 10px;
+    transition: background 0.3s;
 }
 
 header nav ul li a:hover {
-    color: grey; /* Change text color to grey on hover */
+    background: #555;
+    border-radius: 5px;
 }
 
-/* Add top padding to body content to avoid content being hidden under the fixed header */
-body {
-    padding-top: 62px; /* Same height as the header */
-}
-
-/* Hero section styles for home page */
-.hero {
-    background-color: #222; /* Slightly lighter than header */
-    color: #fff;
-    height: 354px; /* 0.75 times the previous 472px */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0 1em;
-}
-
-.hero h2 {
-    font-size: 1.5em; /* Restored original font size */
-    margin: 0;
-    max-width: 800px;
-    line-height: 1.4; /* Improve readability */
-    color: #fff; /* White font color */
-}
-
-.hero .message {
-    max-width: 800px;
-    line-height: 1.4;
-    font-size: 1.5em; /* Restored original font size */
-}
-
-/* Main container styles */
-main {
-    padding: 2em;
-    padding-bottom: 4em; /* Added extra padding to ensure space before the footer */
+.logo {
+    height: 40px;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1em;
+    padding: 20px;
 }
 
-.banner {
-    background-color: #f4f4f4;
-    padding: 1em;
-    text-align: center;
-    margin-bottom: 1.5em;
-}
-
-.banner h2 {
-    margin: 0;
-    color: #333;
-}
-
-h1, h2 {
-    color: #333;
-}
-
-a {
-    color: #0066cc;
-    text-decoration: none;
-}
-
-a:hover {
-    color: grey; /* Change text color to grey on hover */
-}
-
-/* Appointment section styles */
-.appointment {
-    text-align: center;
-    margin: 2em 0;
-    padding-bottom: 2em; /* Ensure space before the footer */
-}
-
-.appointment-button {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff;
-    background-color: #000; /* Changed background color to black */
-    text-decoration: none;
-    border-radius: 5px;
-    transition: color 0.3s; /* Smooth transition for color change */
-}
-
-.appointment-button:hover {
-    color: grey; /* Change text color to grey on hover */
-}
-
-.team-image {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 1em auto;
-}
-
-/* Team message section styles */
-.team-message {
-    text-align: center;
-    margin-top: 1em;
-    margin-bottom: 3em; /* Added margin to avoid sticking to the footer */
-}
-
-.team-message p {
-    font-size: 1.3em; /* Slightly larger font size for readability */
-    color: #666; /* Softer color for the paragraph */
-    margin-bottom: 1.5em; /* Added space before the button */
-}
-
-.services-button {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff;
-    background-color: #000; /* Changed background color to black */
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 1em; /* Added margin-top to avoid it sticking to the bottom */
-    transition: color 0.3s; /* Smooth transition for color change */
-}
-
-.services-button:hover {
-    color: grey; /* Change text color to grey on hover */
-}
-
-/* Result-oriented section styles */
-.result-oriented {
-    margin: 2em 0;
-    text-align: left; /* Align text to the left */
-}
-
-.result-oriented h2 {
-    font-size: 2em; /* Make the title stand out */
-    margin-bottom: 0.5em;
-    color: #333; /* Darker color for emphasis */
-}
-
-.result-oriented p {
-    font-size: 1.2em; /* Slightly larger font size for readability */
-    color: #666; /* Softer color for the paragraph */
-}
-
-/* Trusted by section styles */
-.trusted-by {
-    text-align: center;
-    margin: 3em 0;
-}
-
-.trusted-by h2 {
-    font-size: 2em;
-    margin-bottom: 1em;
-    color: #333; /* Darker color for emphasis */
-}
-
-.trusted-by .logos {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.trusted-by .logos img {
-    max-height: 60px;
-    margin: 0 1em;
-    max-width: 100px; /* Added max-width to prevent logos from becoming too large */
-}
-
-/* Contact project section styles */
-.contact-project {
-    text-align: center;
-    margin: 3em 0;
-}
-
-.contact-project p {
-    font-size: 1.3em; /* Slightly larger font size for readability */
-    color: #666; /* Softer color for the paragraph */
-    margin-bottom: 1.5em; /* Added space before the button */
-}
-
-.contact-button {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff;
-    background-color: #000; /* Black background for consistency */
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 1em; /* Added margin-top to avoid it sticking to the bottom */
-    transition: color 0.3s; /* Smooth transition for color change */
-}
-
-.contact-button:hover {
-    color: grey; /* Change text color to grey on hover */
-}
-
-/* Footer styles */
-footer {
-    background-color: #111;
-    color: #fff;
-    text-align: center;
-    padding: 1.5em 0; /* Increased padding for better visibility */
-    margin-top: 2em; /* Ensure there's space above the footer */
-}
-
-/* Contact hero section styles */
-.contact-hero {
-    background-color: grey; /* Grey background color */
-    color: #fff;
-    height: 190px; /* Height of 190px */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.contact-hero h1 {
-    font-size: 2.5em;
-    margin: 0;
-    color: #fff;
-}
-
-/* Services hero section styles */
+/* Hero section styles */
 .services-hero {
-    background-color: grey; /* Grey background color */
-    color: #fff;
-    height: 190px; /* Height of 190px */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: #f8f9fa; /* Background color */
     text-align: center;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    padding: 50px 0; /* Padding */
 }
 
 .services-hero h1 {
-    font-size: 2.5em;
+    font-size: 3em; /* Font size */
+    color: #333; /* Font color */
     margin: 0;
-    color: #fff;
 }
 
 /* Contact form styles */
 .contact-form {
-    max-width: 800px;
+    max-width: 600px; /* Adjusted to a smaller max-width */
     margin: 2em auto;
     padding: 0 1em;
 }
 
 .contact-form h2 {
-    font-size: 2em;
+    font-size: 1.5em; /* Reduced font size */
     color: #333;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
 }
 
 .contact-form label {
     display: block;
     margin-bottom: 0.5em;
-    font-size: 1.2em; /* Larger font size for readability */
+    font-size: 1em; /* Reduced font size */
     color: #333;
 }
 
 .contact-form input,
-.contact-form textarea {
+.contact-form textarea,
+.contact-form select {
     width: 100%;
-    padding: 0.75em;
+    padding: 0.5em; /* Reduced padding */
     margin-bottom: 1em;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1em;
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    font-size: 0.9em; /* Reduced font size */
+    box-sizing: border-box;
 }
 
 .contact-form textarea {
-    height: 150px;
+    height: 100px; /* Adjusted height */
 }
 
 .contact-form button {
     padding: 10px 20px;
-    background-color: #000; /* Black background for consistency */
+    background-color: #000;
     color: #fff;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color change */
+    font-size: 1em; /* Reduced font size */
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .contact-form button:hover {
-    background-color: grey; /* Grey background color on hover */
-    color: #fff; /* White text color on hover */
-}
-
-/* Contact list styles */
-.contact-list {
-    list-style: none;
-    padding: 0;
-}
-
-.contact-list li {
-    margin-bottom: 1em;
-    font-size: 1.2em; /* Larger font size for readability */
-    color: #333;
-}
-
-/* Company page hero section styles */
-.company-hero {
-    background-color: grey; /* Grey background color */
-    color: #fff;
-    height: 190px; /* Height of 190px */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.company-hero h1 {
-    font-size: 2.5em;
-    margin: 0;
+    background-color: grey;
     color: #fff;
 }
 
-/* Company team section styles */
+/* Team section styles */
 .team {
-    margin-top: 2em;
+    padding: 20px 0;
 }
 
 .team h2 {
     text-align: center;
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 1em;
+    margin-bottom: 20px;
 }
 
 .team-members {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
 }
 
 .team-member {
+    flex: 1 1 200px;
+    margin: 10px;
     text-align: center;
-    margin: 1em;
-    width: calc(33.333% - 2em);
-    box-sizing: border-box;
 }
 
 .team-member img {
     width: 100%;
-    max-width: 300px;
-    height: auto;
+    max-width: 150px;
     border-radius: 50%;
 }
 
 .team-member p {
-    font-size: 1.1em;
+    margin-top: 10px;
+    font-size: 1em;
     color: #333;
-    margin-top: 0.5em;
-    font-family: 'CoolFont', Arial, sans-serif; /* Replace 'CoolFont' with the actual font name you prefer */
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
