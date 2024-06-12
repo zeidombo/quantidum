@@ -37,27 +37,26 @@
             </address>
         </section>
         <section class="contact-form">
-            <h2>Get in Touch</h2>
-            <form id="contactForm" action="https://script.google.com/macros/s/AKfycbyLmIwZmmxZQHd5DcRH4eRl76xqnUqCKdpPoXNcBHAI0-CPPI99i2ye99cGLmSBGk_qqg/exec" method="POST">
+            <form id="contactForm">
                 <label for="firstName">First Name:</label>
                 <input type="text" id="firstName" name="first" required>
 
                 <label for="lastName">Last Name:</label>
                 <input type="text" id="lastName" name="last" required>
 
-                <label for="email">Your Email:</label>
+                <label for="email">Your email:</label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="number" required>
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="number">
 
                 <label for="help">How can we help?</label>
                 <select id="help" name="help" required>
-                    <option value="">--Please choose an option--</option>
-                    <option value="A Project - I want to share my vision with Quantidum">A Project - I want to share my vision with Quantidum</option>
-                    <option value="Career - I want to learn more about one of your positions">Career - I want to learn more about one of your positions</option>
-                    <option value="Pitch Us - I have a product or service that will benefit Quantidum">Pitch Us - I have a product or service that will benefit Quantidum</option>
-                    <option value="Everything Else - My question is unique">Everything Else - My question is unique</option>
+                    <option value="" disabled selected style="color: #aaa;">Please select</option>
+                    <option value="A Project">A Project - I want to share my vision with Quantidum</option>
+                    <option value="Career">Career - I want to learn more about one of your positions</option>
+                    <option value="Pitch Us">Pitch Us - I have a product or service that will benefit Quantidum</option>
+                    <option value="Everything Else">Everything Else - My question is unique</option>
                 </select>
 
                 <label for="reason">Tell us more about your reason for reaching out:</label>
@@ -82,7 +81,7 @@
             var formData = new FormData(this);
 
             var xhr = new XMLHttpRequest();
-            xhr.open('POST', this.action, true);
+            xhr.open('POST', 'https://script.google.com/macros/s/AKfycbyLmIwZmmxZQHd5DcRH4eRl76xqnUqCKdpPoXNcBHAI0-CPPI99i2ye99cGLmSBGk_qqg/exec', true);
             xhr.setRequestHeader('Accept', 'application/json');
             xhr.onreadystatechange = function() {
                 if (xhr.readyState === 4) {
