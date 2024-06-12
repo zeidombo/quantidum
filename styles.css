@@ -163,92 +163,59 @@ a:hover {
 
 .team-message p {
     font-size: 1.3em; /* Slightly larger font size for readability */
-    color: #666; /* Softer color for the paragraph */
-    margin-bottom: 1.5em; /* Added space before the button */
+    color: #333;
+    max-width: 800px;
+    line-height: 1.4; /* Improve readability */
+    margin: 0 auto;
 }
 
-.services-button {
-    display: inline-block;
-    padding: 10px 20px;
+.contact-hero {
+    background-color: #222;
     color: #fff;
-    background-color: #000; /* Changed background color to black */
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 1em; /* Added margin-top to avoid it sticking to the bottom */
-    transition: color 0.3s; /* Smooth transition for color change */
-}
-
-.services-button:hover {
-    color: grey; /* Change text color to grey on hover */
-}
-
-/* Result-oriented section styles */
-.result-oriented {
-    margin: 2em 0;
-    text-align: left; /* Align text to the left */
-}
-
-.result-oriented h2 {
-    font-size: 2em; /* Make the title stand out */
-    margin-bottom: 0.5em;
-    color: #333; /* Darker color for emphasis */
-}
-
-.result-oriented p {
-    font-size: 1.2em; /* Slightly larger font size for readability */
-    color: #666; /* Softer color for the paragraph */
-}
-
-/* Trusted by section styles */
-.trusted-by {
-    text-align: center;
-    margin: 3em 0;
-}
-
-.trusted-by h2 {
-    font-size: 2em;
-    margin-bottom: 1em;
-    color: #333; /* Darker color for emphasis */
-}
-
-.trusted-by .logos {
+    height: 236px; /* Adjusted height */
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
-}
-
-.trusted-by .logos img {
-    max-height: 60px;
-    margin: 0 1em;
-    max-width: 100px; /* Added max-width to prevent logos from becoming too large */
-}
-
-/* Contact project section styles */
-.contact-project {
+    justify-content: center;
     text-align: center;
-    margin: 3em 0;
+    padding: 0 1em;
 }
 
-.contact-project p {
-    font-size: 1.3em; /* Slightly larger font size for readability */
-    color: #666; /* Softer color for the paragraph */
-    margin-bottom: 1.5em; /* Added space before the button */
-}
-
-.contact-button {
-    display: inline-block;
-    padding: 10px 20px;
+.contact-hero h1 {
+    font-size: 2em;
     color: #fff;
-    background-color: #000; /* Black background for consistency */
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 1em; /* Added margin-top to avoid it sticking to the bottom */
-    transition: color 0.3s; /* Smooth transition for color change */
 }
 
-.contact-button:hover {
-    color: grey; /* Change text color to grey on hover */
+/* Team section styles */
+.team {
+    padding: 2em 0;
+}
+
+.team h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-member {
+    margin: 1em;
+    text-align: center;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.team-member p {
+    margin-top: 0.5em;
+    font-weight: bold;
 }
 
 /* Footer styles */
@@ -256,167 +223,6 @@ footer {
     background-color: #111;
     color: #fff;
     text-align: center;
-    padding: 1.5em 0; /* Increased padding for better visibility */
-    margin-top: 2em; /* Ensure there's space above the footer */
-}
-
-/* Contact hero section styles */
-.contact-hero {
-    background-color: grey; /* Grey background color */
-    color: #fff;
-    height: 190px; /* Height of 190px */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.contact-hero h1 {
-    font-size: 2.5em;
-    margin: 0;
-    color: #fff;
-}
-
-/* Services hero section styles */
-.services-hero {
-    background-color: grey; /* Grey background color */
-    color: #fff;
-    height: 190px; /* Height of 190px */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.services-hero h1 {
-    font-size: 2.5em;
-    margin: 0;
-    color: #fff;
-}
-
-/* Contact form styles */
-.contact-form {
-    max-width: 800px;
-    margin: 2em auto;
-    padding: 0 1em;
-}
-
-.contact-form h2 {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 0.5em;
-}
-
-.contact-form label {
-    display: block;
-    margin-bottom: 0.5em;
-    font-size: 1.2em; /* Larger font size for readability */
-    color: #333;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 0.75em;
-    margin-bottom: 1em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1em;
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-}
-
-.contact-form textarea {
-    height: 150px;
-}
-
-.contact-form button {
-    padding: 10px 20px;
-    background-color: #000; /* Black background for consistency */
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color change */
-}
-
-.contact-form button:hover {
-    background-color: grey; /* Grey background color on hover */
-    color: #fff; /* White text color on hover */
-}
-
-/* Contact list styles */
-.contact-list {
-    list-style: none;
-    padding: 0;
-}
-
-.contact-list li {
-    margin-bottom: 1em;
-    font-size: 1.2em; /* Larger font size for readability */
-    color: #333;
-}
-
-/* Company page hero section styles */
-.company-hero {
-    background-color: #222;
-    color: #fff;
-    height: 190px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.company-hero h1 {
-    font-size: 2.5em;
-    margin: 0;
-    color: #fff;
-}
-
-/* Company team section styles */
-.team {
+    padding: 1em 0;
     margin-top: 2em;
-}
-
-.team h2 {
-    text-align: center;
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 1em;
-}
-
-.team-members {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.team-member {
-    text-align: center;
-    margin: 1em;
-    width: calc(33.333% - 2em);
-    box-sizing: border-box;
-}
-
-.team-member img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 50%;
-}
-
-.team-member p {
-    font-size: 1.1em;
-    color: #333;
-    margin-top: 0.5em;
-    font-family: 'CoolFont', Arial, sans-serif; /* Replace 'CoolFont' with the actual font name you prefer */
 }
