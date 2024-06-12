@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Quantidum</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <title>Contact Us</title>
 </head>
 <body>
+    <!-- Header -->
     <header>
         <nav>
-            <a href="index.html">
-                <img src="assets/images/logo.png" alt="Quantidum Logo" class="logo">
-            </a>
+            <img src="logo.png" alt="Company Logo" class="logo">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
@@ -21,81 +20,49 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Contact Hero Section -->
     <section class="contact-hero">
-        <h1>CONTACT</h1>
+        <h1>Contact Us</h1>
     </section>
-    <main class="container">
-        <section class="contact-info">
-            <h2>Contact Information</h2>
-            <address>
-                Quantidum<br>
-                Rue 230 Bougie Ba<br>
-                Hamdallaye ACI 2000<br>
-                Bamako<br>
-                <a href="tel:+22391568547">(+223) 9156-8547</a><br>
-                <a href="mailto:contact@quantidum.com">contact@quantidum.com</a>
-            </address>
-        </section>
-        <section class="contact-form">
-            <h2>Get in Touch</h2>
-            <form id="contactForm" action="https://script.google.com/macros/s/AKfycbyLmIwZmmxZQHd5DcRH4eRl76xqnUqCKdpPoXNcBHAI0-CPPI99i2ye99cGLmSBGk_qqg/exec" method="POST">
-                <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" name="first" required>
 
-                <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" name="last" required>
+    <!-- Main Container -->
+    <main>
+        <div class="container">
+            <!-- Contact Form Section -->
+            <section class="contact-form">
+                <h2>Get in Touch</h2>
+                <form action="submit_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
 
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
 
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="number" required>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
 
-                <label for="help">How can we help?</label>
-                <select id="help" name="help" required>
-                    <option value="">--Please choose an option--</option>
-                    <option value="A Project - I want to share my vision with Quantidum">A Project - I want to share my vision with Quantidum</option>
-                    <option value="Career - I want to learn more about one of your positions">Career - I want to learn more about one of your positions</option>
-                    <option value="Pitch Us - I have a product or service that will benefit Quantidum">Pitch Us - I have a product or service that will benefit Quantidum</option>
-                    <option value="Everything Else - My question is unique">Everything Else - My question is unique</option>
-                </select>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
 
-                <label for="reason">Tell us more about your reason for reaching out:</label>
-                <textarea id="reason" name="reason" rows="5" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
 
-                <button type="submit">Send</button>
-            </form>
-            <div id="thankYouMessage" style="display: none;">
-                <p>Thank you for contacting us! We'll get back to you soon.</p>
-            </div>
-        </section>
+            <!-- Contact Details Section -->
+            <section class="contact-details">
+                <ul class="contact-list">
+                    <li>Phone: (123) 456-7890</li>
+                    <li>Email: info@company.com</li>
+                    <li>Address: 123 Main Street, City, Country</li>
+                </ul>
+            </section>
+        </div>
     </main>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Quantidum. All rights reserved.</p>
+        <p>&copy; 2024 Company Name. All rights reserved.</p>
     </footer>
-
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the default form submission
-
-            // Submit the form via Ajax
-            var formData = new FormData(this);
-
-            var xhr = new XMLHttpRequest();
-            xhr.open('POST', this.action, true);
-            xhr.setRequestHeader('Accept', 'application/json');
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState === 4) {
-                    if (xhr.status === 200 || xhr.status === 0) { // Successful form submission
-                        document.getElementById('contactForm').style.display = 'none'; // Hide the form
-                        document.getElementById('thankYouMessage').style.display = 'block'; // Show the thank you message
-                    } else {
-                        console.error(xhr.statusText); // Log any errors
-                    }
-                }
-            };
-            xhr.send(formData);
-        });
-    </script>
 </body>
 </html>

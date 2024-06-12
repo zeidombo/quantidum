@@ -1,26 +1,26 @@
 /* General styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Stylish and modern font */
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    font-size: 16px; /* Restored original font size */
+    font-size: 16px;
 }
 
 /* Header and navigation styles */
 header {
-    background-color: #111; /* Darker background for the header */
+    background-color: #111;
     color: #fff;
     height: 62px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 1em;
-    position: fixed; /* Fix the header */
-    top: 0; /* Position at the top of the page */
-    width: 100%; /* Full width */
-    z-index: 1000; /* Ensure it stays above other elements */
-    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
 }
 
 header nav {
@@ -36,7 +36,7 @@ header nav img.logo {
 
 header nav ul {
     list-style: none;
-    padding: 0 1em; /* Add padding to ensure text is not cut off */
+    padding: 0 1em;
     margin: 0;
     display: flex;
     flex-grow: 1;
@@ -50,24 +50,23 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1em; /* Restored original font size for menu items */
-    text-transform: uppercase; /* Uppercase menu items */
+    font-size: 1em;
+    text-transform: uppercase;
 }
 
 header nav ul li a:hover {
-    color: grey; /* Change text color to grey on hover */
+    color: grey;
 }
 
-/* Add top padding to body content to avoid content being hidden under the fixed header */
 body {
-    padding-top: 62px; /* Same height as the header */
+    padding-top: 62px;
 }
 
 /* Hero section styles for home page */
 .hero {
-    background-color: #222; /* Slightly lighter than header */
+    background-color: #222;
     color: #fff;
-    height: 354px; /* 0.75 times the previous 472px */
+    height: 354px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,23 +75,23 @@ body {
 }
 
 .hero h2 {
-    font-size: 1.5em; /* Restored original font size */
+    font-size: 1.5em;
     margin: 0;
     max-width: 800px;
-    line-height: 1.4; /* Improve readability */
-    color: #fff; /* White font color */
+    line-height: 1.4;
+    color: #fff;
 }
 
 .hero .message {
     max-width: 800px;
     line-height: 1.4;
-    font-size: 1.5em; /* Restored original font size */
+    font-size: 1.5em;
 }
 
 /* Main container styles */
 main {
     padding: 2em;
-    padding-bottom: 4em; /* Added extra padding to ensure space before the footer */
+    padding-bottom: 4em;
 }
 
 .container {
@@ -123,28 +122,27 @@ a {
 }
 
 a:hover {
-    color: grey; /* Change text color to grey on hover */
+    color: grey;
 }
 
-/* Appointment section styles */
 .appointment {
     text-align: center;
     margin: 2em 0;
-    padding-bottom: 2em; /* Ensure space before the footer */
+    padding-bottom: 2em;
 }
 
 .appointment-button {
     display: inline-block;
     padding: 10px 20px;
     color: #fff;
-    background-color: #000; /* Changed background color to black */
+    background-color: #000;
     text-decoration: none;
     border-radius: 5px;
-    transition: color 0.3s; /* Smooth transition for color change */
+    transition: color 0.3s;
 }
 
 .appointment-button:hover {
-    color: grey; /* Change text color to grey on hover */
+    color: grey;
 }
 
 .team-image {
@@ -154,52 +152,49 @@ a:hover {
     margin: 1em auto;
 }
 
-/* Team message section styles */
 .team-message {
     text-align: center;
     margin-top: 1em;
-    margin-bottom: 3em; /* Added margin to avoid sticking to the footer */
+    margin-bottom: 3em;
 }
 
 .team-message p {
-    font-size: 1.3em; /* Slightly larger font size for readability */
-    color: #666; /* Softer color for the paragraph */
-    margin-bottom: 1.5em; /* Added space before the button */
+    font-size: 1.3em;
+    color: #666;
+    margin-bottom: 1.5em;
 }
 
 .services-button {
     display: inline-block;
     padding: 10px 20px;
     color: #fff;
-    background-color: #000; /* Changed background color to black */
+    background-color: #000;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 1em; /* Added margin-top to avoid it sticking to the bottom */
-    transition: color 0.3s; /* Smooth transition for color change */
+    margin-top: 1em;
+    transition: color 0.3s;
 }
 
 .services-button:hover {
-    color: grey; /* Change text color to grey on hover */
+    color: grey;
 }
 
-/* Result-oriented section styles */
 .result-oriented {
     margin: 2em 0;
-    text-align: left; /* Align text to the left */
+    text-align: left;
 }
 
 .result-oriented h2 {
-    font-size: 2em; /* Make the title stand out */
+    font-size: 2em;
     margin-bottom: 0.5em;
-    color: #333; /* Darker color for emphasis */
+    color: #333;
 }
 
 .result-oriented p {
-    font-size: 1.2em; /* Slightly larger font size for readability */
-    color: #666; /* Softer color for the paragraph */
+    font-size: 1.2em;
+    color: #666;
 }
 
-/* Trusted by section styles */
 .trusted-by {
     text-align: center;
     margin: 3em 0;
@@ -208,7 +203,7 @@ a:hover {
 .trusted-by h2 {
     font-size: 2em;
     margin-bottom: 1em;
-    color: #333; /* Darker color for emphasis */
+    color: #333;
 }
 
 .trusted-by .logos {
@@ -221,50 +216,48 @@ a:hover {
 .trusted-by .logos img {
     max-height: 60px;
     margin: 0 1em;
-    max-width: 100px; /* Added max-width to prevent logos from becoming too large */
+    max-width: 100px;
 }
 
-/* Contact project section styles */
 .contact-project {
     text-align: center;
     margin: 3em 0;
 }
 
 .contact-project p {
-    font-size: 1.3em; /* Slightly larger font size for readability */
-    color: #666; /* Softer color for the paragraph */
-    margin-bottom: 1.5em; /* Added space before the button */
+    font-size: 1.3em;
+    color: #666;
+    margin-bottom: 1.5em;
 }
 
 .contact-button {
     display: inline-block;
     padding: 10px 20px;
     color: #fff;
-    background-color: #000; /* Black background for consistency */
+    background-color: #000;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 1em; /* Added margin-top to avoid it sticking to the bottom */
-    transition: color 0.3s; /* Smooth transition for color change */
+    margin-top: 1em;
+    transition: color 0.3s;
 }
 
 .contact-button:hover {
-    color: grey; /* Change text color to grey on hover */
+    color: grey;
 }
 
-/* Footer styles */
 footer {
     background-color: #111;
     color: #fff;
     text-align: center;
-    padding: 1.5em 0; /* Increased padding for better visibility */
-    margin-top: 2em; /* Ensure there's space above the footer */
+    padding: 1.5em 0;
+    margin-top: 2em;
 }
 
 /* Contact hero section styles */
 .contact-hero {
-    background-color: grey; /* Grey background color */
+    background-color: grey;
     color: #fff;
-    height: 190px; /* Height of 190px */
+    height: 190px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -282,9 +275,9 @@ footer {
 
 /* Services hero section styles */
 .services-hero {
-    background-color: grey; /* Grey background color */
+    background-color: grey;
     color: #fff;
-    height: 190px; /* Height of 190px */
+    height: 190px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -302,7 +295,7 @@ footer {
 
 /* Contact form styles */
 .contact-form {
-    max-width: 800px;
+    max-width: 600px; /* Reduced max-width */
     margin: 2em auto;
     padding: 0 1em;
 }
@@ -315,38 +308,41 @@ footer {
 
 .contact-form label {
     display: block;
-    margin-bottom: 0.5em;
-    font-size: 1.2em; /* Larger font size for readability */
+    margin-bottom: 0.2em; /* Smaller margin */
+    font-size: 0.9em; /* Smaller font size */
     color: #333;
+    font-family: 'Roboto', sans-serif; /* Stylish font */
+    text-transform: uppercase; /* Uppercase for labels */
 }
 
 .contact-form input,
-.contact-form textarea {
+.contact-form textarea,
+.contact-form select {
     width: 100%;
-    padding: 0.75em;
-    margin-bottom: 1em;
+    padding: 0.5em; /* Smaller padding */
+    margin-bottom: 0.5em; /* Smaller margin */
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1em;
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    font-size: 0.9em; /* Smaller font size */
+    box-sizing: border-box;
 }
 
 .contact-form textarea {
-    height: 150px;
+    height: 100px; /* Reduced height */
 }
 
 .contact-form button {
-    padding: 10px 20px;
-    background-color: #000; /* Black background for consistency */
+    padding: 8px 16px; /* Smaller padding */
+    background-color: #000;
     color: #fff;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color change */
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .contact-form button:hover {
-    background-color: grey; /* Grey background color on hover */
-    color: #fff; /* White text color on hover */
+    background-color: grey;
+    color: #fff;
 }
 
 /* Contact list styles */
@@ -357,15 +353,15 @@ footer {
 
 .contact-list li {
     margin-bottom: 1em;
-    font-size: 1.2em; /* Larger font size for readability */
+    font-size: 1.2em;
     color: #333;
 }
 
 /* Company page hero section styles */
 .company-hero {
-    background-color: grey; /* Grey background color */
+    background-color: grey;
     color: #fff;
-    height: 190px; /* Height of 190px */
+    height: 190px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -402,21 +398,57 @@ footer {
 
 .team-member {
     text-align: center;
-    margin: 1em;
-    width: calc(33.333% - 2em);
-    box-sizing: border-box;
+    width: 45%;
+    margin-bottom: 2em;
 }
 
 .team-member img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
     border-radius: 50%;
+    max-width: 150px;
+    height: auto;
+}
+
+.team-member h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 0.5em;
 }
 
 .team-member p {
-    font-size: 1.1em;
+    font-size: 1.2em;
+    color: #666;
+    margin: 0;
+}
+
+/* Company history section styles */
+.history {
+    margin-top: 2em;
+    padding-bottom: 2em;
+}
+
+.history h2 {
+    text-align: center;
+    font-size: 2em;
     color: #333;
-    margin-top: 0.5em;
-    font-family: 'CoolFont', Arial, sans-serif; /* Replace 'CoolFont' with the actual font name you prefer */
+    margin-bottom: 1em;
+}
+
+.history p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 1.5em;
+}
+
+.history .year {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.history .event {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 1em;
+    text-align: center;
 }
