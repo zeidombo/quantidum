@@ -334,8 +334,9 @@ footer {
     border: none;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
-    width: 100%; /* Full width button */
+    width: auto; /* Small button */
     border-radius: 5px;
+    align-self: flex-start; /* Align to the left */
 }
 
 .contact-form button:hover {
@@ -411,3 +412,4 @@ footer {
     margin-top: 0.5em;
     font-family: 'CoolFont', Arial, sans-serif;
 }
+
