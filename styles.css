@@ -363,9 +363,9 @@ footer {
 
 /* Company page hero section styles */
 .company-hero {
-    background-color: #222;
+    background-color: grey; /* Grey background color */
     color: #fff;
-    height: 190px;
+    height: 190px; /* Height of 190px */
     display: flex;
     align-items: center;
     justify-content: center;
