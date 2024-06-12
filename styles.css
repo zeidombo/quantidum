@@ -1,26 +1,26 @@
 /* General styles */
 body {
-    font-family: 'Roboto', sans-serif; /* Stylish and modern font */
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    font-size: 16px;
+    font-size: 16px; /* Restored original font size */
 }
 
 /* Header and navigation styles */
 header {
-    background-color: #111;
+    background-color: #111; /* Darker background for the header */
     color: #fff;
     height: 62px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 1em;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-sizing: border-box;
+    position: fixed; /* Fix the header */
+    top: 0; /* Position at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it stays above other elements */
+    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
 }
 
 header nav {
@@ -36,7 +36,7 @@ header nav img.logo {
 
 header nav ul {
     list-style: none;
-    padding: 0 1em;
+    padding: 0 1em; /* Add padding to ensure text is not cut off */
     margin: 0;
     display: flex;
     flex-grow: 1;
@@ -50,23 +50,24 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1em;
-    text-transform: uppercase;
+    font-size: 1em; /* Restored original font size for menu items */
+    text-transform: uppercase; /* Uppercase menu items */
 }
 
 header nav ul li a:hover {
-    color: grey;
+    color: grey; /* Change text color to grey on hover */
 }
 
+/* Add top padding to body content to avoid content being hidden under the fixed header */
 body {
-    padding-top: 62px;
+    padding-top: 62px; /* Same height as the header */
 }
 
 /* Hero section styles for home page */
 .hero {
-    background-color: #222;
+    background-color: #222; /* Slightly lighter than header */
     color: #fff;
-    height: 354px;
+    height: 354px; /* 0.75 times the previous 472px */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,23 +76,23 @@ body {
 }
 
 .hero h2 {
-    font-size: 1.5em;
+    font-size: 1.5em; /* Restored original font size */
     margin: 0;
     max-width: 800px;
-    line-height: 1.4;
-    color: #fff;
+    line-height: 1.4; /* Improve readability */
+    color: #fff; /* White font color */
 }
 
 .hero .message {
     max-width: 800px;
     line-height: 1.4;
-    font-size: 1.5em;
+    font-size: 1.5em; /* Restored original font size */
 }
 
 /* Main container styles */
 main {
     padding: 2em;
-    padding-bottom: 4em;
+    padding-bottom: 4em; /* Added extra padding to ensure space before the footer */
 }
 
 .container {
@@ -122,27 +123,28 @@ a {
 }
 
 a:hover {
-    color: grey;
+    color: grey; /* Change text color to grey on hover */
 }
 
+/* Appointment section styles */
 .appointment {
     text-align: center;
     margin: 2em 0;
-    padding-bottom: 2em;
+    padding-bottom: 2em; /* Ensure space before the footer */
 }
 
 .appointment-button {
     display: inline-block;
     padding: 10px 20px;
     color: #fff;
-    background-color: #000;
+    background-color: #000; /* Changed background color to black */
     text-decoration: none;
     border-radius: 5px;
-    transition: color 0.3s;
+    transition: color 0.3s; /* Smooth transition for color change */
 }
 
 .appointment-button:hover {
-    color: grey;
+    color: grey; /* Change text color to grey on hover */
 }
 
 .team-image {
@@ -152,303 +154,115 @@ a:hover {
     margin: 1em auto;
 }
 
+/* Team message section styles */
 .team-message {
     text-align: center;
-    margin-top: 1em;
-    margin-bottom: 3em;
-}
-
-.team-message p {
-    font-size: 1.3em;
-    color: #666;
-    margin-bottom: 1.5em;
-}
-
-.services-button {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff;
-    background-color: #000;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 1em;
-    transition: color 0.3s;
-}
-
-.services-button:hover {
-    color: grey;
-}
-
-.result-oriented {
     margin: 2em 0;
-    text-align: left;
 }
 
-.result-oriented h2 {
-    font-size: 2em;
-    margin-bottom: 0.5em;
-    color: #333;
-}
-
-.result-oriented p {
-    font-size: 1.2em;
-    color: #666;
-}
-
-.trusted-by {
-    text-align: center;
-    margin: 3em 0;
-}
-
-.trusted-by h2 {
-    font-size: 2em;
+.team-message h2 {
     margin-bottom: 1em;
-    color: #333;
 }
 
-.trusted-by .logos {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.trusted-by .logos img {
-    max-height: 60px;
-    margin: 0 1em;
-    max-width: 100px;
-}
-
-.contact-project {
-    text-align: center;
-    margin: 3em 0;
-}
-
-.contact-project p {
-    font-size: 1.3em;
-    color: #666;
-    margin-bottom: 1.5em;
-}
-
-.contact-button {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff;
-    background-color: #000;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 1em;
-    transition: color 0.3s;
-}
-
-.contact-button:hover {
-    color: grey;
-}
-
-footer {
-    background-color: #111;
-    color: #fff;
-    text-align: center;
-    padding: 1.5em 0;
-    margin-top: 2em;
-}
-
-/* Contact hero section styles */
+/* Contact page specific styles */
 .contact-hero {
-    background-color: grey;
+    background-color: #222; /* Match the hero section with header */
     color: #fff;
-    height: 190px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    padding: 0 1em;
+    margin-top: 62px; /* Ensure hero section is below the header */
 }
 
 .contact-hero h1 {
     font-size: 2.5em;
     margin: 0;
-    color: #fff;
 }
 
-/* Services hero section styles */
-.services-hero {
-    background-color: grey;
-    color: #fff;
-    height: 190px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.contact-info {
     text-align: center;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    margin: 2em 0;
 }
 
-.services-hero h1 {
-    font-size: 2.5em;
-    margin: 0;
-    color: #fff;
+.contact-info address {
+    font-style: normal;
+    line-height: 1.6;
 }
 
-/* Contact form styles */
 .contact-form {
-    max-width: 600px; /* Reduced max-width */
-    margin: 2em auto;
-    padding: 0 1em;
+    margin: 2em 0;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #f9f9f9; /* Light grey background for the form */
+    border-radius: 8px; /* Rounded corners for the form */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for form depth */
 }
 
 .contact-form h2 {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 0.5em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.contact-form form {
+    display: grid;
+    gap: 1em;
 }
 
 .contact-form label {
-    display: block;
-    margin-bottom: 0.2em; /* Smaller margin */
-    font-size: 0.9em; /* Smaller font size */
-    color: #333;
-    font-family: 'Roboto', sans-serif; /* Stylish font */
-    text-transform: uppercase; /* Uppercase for labels */
+    font-weight: bold;
 }
 
-.contact-form input,
-.contact-form textarea,
-.contact-form select {
+.contact-form input, .contact-form select, .contact-form textarea, .contact-form button {
     width: 100%;
-    padding: 0.5em; /* Smaller padding */
-    margin-bottom: 0.5em; /* Smaller margin */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 0.9em; /* Smaller font size */
-    box-sizing: border-box;
-}
-
-.contact-form textarea {
-    height: 100px; /* Reduced height */
+    padding: 10px;
+    border: 1px solid #ccc; /* Border color for inputs */
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    font-size: 1em; /* Restore original font size for form elements */
 }
 
 .contact-form button {
-    padding: 8px 16px; /* Smaller padding */
-    background-color: #000;
+    background-color: #000; /* Changed button color to black */
     color: #fff;
-    border: none;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s; /* Smooth transition for background color change */
 }
 
 .contact-form button:hover {
-    background-color: grey;
+    background-color: grey; /* Change button color to grey on hover */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #222; /* Match footer background with header */
     color: #fff;
+    margin-top: auto; /* Push the footer to the bottom */
 }
 
-/* Contact list styles */
-.contact-list {
-    list-style: none;
-    padding: 0;
-}
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1em 0;
+    }
 
-.contact-list li {
-    margin-bottom: 1em;
-    font-size: 1.2em;
-    color: #333;
-}
+    header nav ul li {
+        margin: 0.5em 0;
+    }
 
-/* Company page hero section styles */
-.company-hero {
-    background-color: grey;
-    color: #fff;
-    height: 190px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
+    .hero {
+        height: auto;
+        padding: 2em 1em;
+    }
 
-.company-hero h1 {
-    font-size: 2.5em;
-    margin: 0;
-    color: #fff;
-}
-
-/* Company team section styles */
-.team {
-    margin-top: 2em;
-}
-
-.team h2 {
-    text-align: center;
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 1em;
-}
-
-.team-members {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.team-member {
-    text-align: center;
-    width: 45%;
-    margin-bottom: 2em;
-}
-
-.team-member img {
-    border-radius: 50%;
-    max-width: 150px;
-    height: auto;
-}
-
-.team-member h3 {
-    font-size: 1.5em;
-    color: #333;
-    margin-top: 0.5em;
-}
-
-.team-member p {
-    font-size: 1.2em;
-    color: #666;
-    margin: 0;
-}
-
-/* Company history section styles */
-.history {
-    margin-top: 2em;
-    padding-bottom: 2em;
-}
-
-.history h2 {
-    text-align: center;
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 1em;
-}
-
-.history p {
-    font-size: 1.2em;
-    color: #666;
-    margin-bottom: 1.5em;
-}
-
-.history .year {
-    font-size: 1.5em;
-    color: #333;
-    margin-bottom: 0.5em;
-    text-align: center;
-}
-
-.history .event {
-    font-size: 1.2em;
-    color: #666;
-    margin-bottom: 1em;
-    text-align: center;
+    .contact-form {
+        padding: 1em;
+    }
 }
