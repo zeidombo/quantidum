@@ -23,10 +23,10 @@
     </header>
     <section class="hero">
         <div class="message">
-            <h2>We are a data intelligence hub</h2>
-            <h2>driven by a team of seasoned</h2>
-            <h2>data scientists and information</h2>
-            <h2>designers.</h2>
+            <h2 id="line1"></h2>
+            <h2 id="line2"></h2>
+            <h2 id="line3"></h2>
+            <h2 id="line4"></h2>
         </div>
     </section>
     <main class="container">
@@ -58,5 +58,41 @@
     <footer>
         <p>&copy; 2024 Quantidum. All rights reserved.</p>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const texts = [
+                "We are a data intelligence hub",
+                "driven by a team of seasoned",
+                "data scientists and information",
+                "designers."
+            ];
+
+            let currentText = 0;
+            let currentChar = 0;
+            const speed = 50; // Typing speed in milliseconds
+            const pauseBetweenLines = 200; // Pause between lines in milliseconds
+
+            function typeText() {
+                if (currentChar < texts[currentText].length) {
+                    document.getElementById(`line${currentText + 1}`).textContent += texts[currentText].charAt(currentChar);
+                    currentChar++;
+                    setTimeout(typeText, speed);
+                } else {
+                    currentChar = 0;
+                    currentText++;
+                    if (currentText < texts.length) {
+                        setTimeout(typeText, pauseBetweenLines);
+                    }
+                }
+            }
+
+            // Clear initial text content
+            texts.forEach((text, index) => {
+                document.getElementById(`line${index + 1}`).textContent = "";
+            });
+
+            typeText();
+        });
+    </script>
 </body>
 </html>
