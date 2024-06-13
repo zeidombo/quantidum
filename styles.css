@@ -64,7 +64,7 @@ body {
 
 /* Hero section styles for home page */
 .hero {
-    background-color: #222;
+    background: url('assets/images/starry-sky.jpg') no-repeat center center/cover;
     color: #fff;
     height: 354px;
     display: flex;
