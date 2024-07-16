@@ -102,9 +102,16 @@
 
         const hamburger = document.querySelector(".hamburger");
         const navLinks = document.querySelector(".nav-links");
+        const navItems = document.querySelectorAll(".nav-links li");
 
         hamburger.addEventListener("click", () => {
             navLinks.classList.toggle("open");
+        });
+
+        navItems.forEach(item => {
+            item.addEventListener("click", () => {
+                navLinks.classList.remove("open");
+            });
         });
     </script>
 </body>

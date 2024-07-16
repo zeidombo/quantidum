@@ -90,7 +90,7 @@ body {
         transform: translateY(0);
     }
     100% {
-        transform: translateY(-1000px);
+        transform: translateY(-2000px);
     }
 }
 
@@ -457,6 +457,9 @@ footer {
     .hamburger {
         display: block;
         cursor: pointer;
+        position: absolute;
+        top: 15px;
+        right: 15px;
     }
 
     .hamburger .line {
