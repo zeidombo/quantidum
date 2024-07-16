@@ -13,15 +13,21 @@
             <a href="index.html">
                 <img src="assets/images/logo.png" alt="Quantidum Logo" class="logo">
             </a>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="company.html">Company</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </nav>
     </header>
     <section class="hero">
+        <div class="starry-background"></div>
         <div class="message">
             <h2 id="line1"></h2>
             <h2 id="line2"></h2>
@@ -92,6 +98,13 @@
             });
 
             typeText();
+        });
+
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("open");
         });
     </script>
 </body>

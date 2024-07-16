@@ -64,7 +64,7 @@ body {
 
 /* Hero section styles for home page */
 .hero {
-    background: url('assets/images/starry-sky.jpg') no-repeat center center/cover;
+    position: relative;
     color: #fff;
     height: 354px;
     display: flex;
@@ -72,6 +72,26 @@ body {
     justify-content: center;
     text-align: center;
     padding: 0 1em;
+    background-color: black;
+    overflow: hidden;
+}
+
+.starry-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255,255,255,0.15) 2px, transparent 2px) 0 0, radial-gradient(circle, rgba(255,255,255,0.15) 2px, transparent 2px) 50px 50px, linear-gradient(45deg, #232526 25%, #414345 25%, #414345 50%, #232526 50%, #232526 75%, #414345 75%, #414345 100%);
+    background-size: 100px 100px;
+    animation: animateStars 60s linear infinite;
+}
+
+@keyframes animateStars {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-1000px);
+    }
 }
 
 .hero h2 {
@@ -80,12 +100,16 @@ body {
     max-width: 800px;
     line-height: 1.4;
     color: #fff;
+    position: relative;
+    z-index: 1;
 }
 
 .hero .message {
     max-width: 800px;
     line-height: 1.4;
     font-size: 1.5em;
+    position: relative;
+    z-index: 1;
 }
 
 /* Main container styles */
@@ -411,4 +435,62 @@ footer {
     color: #333;
     margin-top: 0.5em;
     font-family: 'CoolFont', Arial, sans-serif;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #111;
+        position: absolute;
+        top: 62px;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+        background-color: #111;
+        position: absolute;
+        top: 62px;
+        left: 0;
+        z-index: 1000;
+    }
+
+    header nav ul li {
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    header nav ul li a {
+        padding: 1em;
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    .hamburger {
+        display: none;
+    }
 }
