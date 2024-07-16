@@ -27,7 +27,7 @@
         </nav>
     </header>
     <section class="hero">
-        <div class="starry-background"></div>
+        <canvas id="starfield"></canvas>
         <div class="message">
             <h2 id="line1"></h2>
             <h2 id="line2"></h2>
@@ -64,55 +64,6 @@
     <footer>
         <p>&copy; 2024 Quantidum. All rights reserved.</p>
     </footer>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const texts = [
-                "We are a data intelligence hub",
-                "driven by a team of seasoned",
-                "data scientists and information",
-                "designers."
-            ];
-
-            let currentText = 0;
-            let currentChar = 0;
-            const speed = 50; // Typing speed in milliseconds
-            const pauseBetweenLines = 200; // Pause between lines in milliseconds
-
-            function typeText() {
-                if (currentChar < texts[currentText].length) {
-                    document.getElementById(`line${currentText + 1}`).textContent += texts[currentText].charAt(currentChar);
-                    currentChar++;
-                    setTimeout(typeText, speed);
-                } else {
-                    currentChar = 0;
-                    currentText++;
-                    if (currentText < texts.length) {
-                        setTimeout(typeText, pauseBetweenLines);
-                    }
-                }
-            }
-
-            // Clear initial text content
-            texts.forEach((text, index) => {
-                document.getElementById(`line${index + 1}`).textContent = "";
-            });
-
-            typeText();
-        });
-
-        const hamburger = document.querySelector(".hamburger");
-        const navLinks = document.querySelector(".nav-links");
-        const navItems = document.querySelectorAll(".nav-links li");
-
-        hamburger.addEventListener("click", () => {
-            navLinks.classList.toggle("open");
-        });
-
-        navItems.forEach(item => {
-            item.addEventListener("click", () => {
-                navLinks.classList.remove("open");
-            });
-        });
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>

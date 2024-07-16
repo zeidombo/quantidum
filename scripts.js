@@ -33,11 +33,19 @@ document.addEventListener("DOMContentLoaded", function() {
     typeText();
 
     // Hamburger menu toggle
-    const hamburger = document.querySelector('.hamburger-menu');
-    const navMenu = document.querySelector('.nav-menu');
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-links');
 
     hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
+        navMenu.classList.toggle('open');
+    });
+
+    const navItems = document.querySelectorAll(".nav-links li");
+
+    navItems.forEach(item => {
+        item.addEventListener("click", () => {
+            navMenu.classList.remove("open");
+        });
     });
 
     // Starfield animation
