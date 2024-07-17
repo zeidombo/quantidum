@@ -60,33 +60,34 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function createStars() {
         stars = [];
-        for (let i = 0; i < 100; i++) {
+        for (let i = 0; i < 1000; i++) {
             stars.push({
                 x: Math.random() * width,
                 y: Math.random() * height,
-                z: Math.random() * width,
+                radius: Math.random() * 1.5,
+                alpha: Math.random(),
+                speed: Math.random() * 0.05
             });
         }
     }
 
     function drawStars() {
         context.clearRect(0, 0, width, height);
-        context.fillStyle = 'white';
+        context.fillStyle = 'rgba(255, 255, 255, 1)';
         for (let star of stars) {
-            let x = (star.x - width / 2) * (width / star.z) + width / 2;
-            let y = (star.y - height / 2) * (width / star.z) + height / 2;
-            let size = width / star.z;
             context.beginPath();
-            context.arc(x, y, size, 0, 2 * Math.PI);
+            context.arc(star.x, star.y, star.radius, 0, 2 * Math.PI);
+            context.closePath();
+            context.fillStyle = `rgba(255, 255, 255, ${star.alpha})`;
             context.fill();
         }
     }
 
     function updateStars() {
         for (let star of stars) {
-            star.z -= 0.2;
-            if (star.z <= 0) {
-                star.z = width;
+            star.alpha += star.speed;
+            if (star.alpha >= 1 || star.alpha <= 0) {
+                star.speed = -star.speed;
             }
         }
     }
