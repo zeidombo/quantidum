@@ -175,7 +175,7 @@ a:hover {
 
 .team-message p {
     font-size: 1.3em;
-    color: #666;
+    color: #000;
     margin-bottom: 1.5em;
 }
 
@@ -202,12 +202,12 @@ a:hover {
 .result-oriented h2 {
     font-size: 2em;
     margin-bottom: 0.5em;
-    color: #333;
+    color: #000;
 }
 
 .result-oriented p {
-    font-size: 1.2em;
-    color: #666;
+    font-size: 1.3em;
+    color: #000;
 }
 
 .trusted-by {
@@ -218,7 +218,7 @@ a:hover {
 .trusted-by h2 {
     font-size: 2em;
     margin-bottom: 1em;
-    color: #333;
+    color: #000;
 }
 
 .trusted-by .logos {
@@ -241,7 +241,7 @@ a:hover {
 
 .contact-project p {
     font-size: 1.3em;
-    color: #666;
+    color: #000;
     margin-bottom: 1.5em;
 }
 
