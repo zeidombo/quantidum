@@ -6,9 +6,8 @@ body {
     font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.5; /* Adjusted line-height for better readability */
+    line-height: 1.6;
     font-size: 16px;
-    letter-spacing: 0.5px; /* Adjusted letter-spacing */
 }
 
 /* Header and navigation styles */
@@ -91,7 +90,7 @@ body {
 
 .hero .message {
     max-width: 800px;
-    line-height: 1.4; /* Adjusted line-height */
+    line-height: 1.4;
     font-size: 1.5em;
     position: relative;
     z-index: 1;
@@ -209,7 +208,7 @@ a:hover {
 
 .result-oriented {
     margin: 2em 0;
-    text-align: left;
+    text-align: justify;
 }
 
 .result-oriented h2 {
@@ -505,35 +504,6 @@ footer {
     header nav ul li a {
         padding: 1em;
         display: block;
-    }
-}
-
-/* Adjusting line height and spacing for mobile */
-@media (max-width: 480px) {
-    body {
-        line-height: 1.2;
-        word-spacing: 0.1em;
-        letter-spacing: 0.1em;
-    }
-
-    .container p,
-    .team-message p,
-    .result-oriented p,
-    .contact-project p {
-        font-size: 1.1em;
-        line-height: 1.4;
-    }
-
-    .hero h2,
-    .hero .message,
-    .result-oriented h2,
-    .trusted-by h2,
-    .contact-hero h1,
-    .services-hero h1,
-    .company-hero h1,
-    .contact-form h2 {
-        font-size: 1.4em;
-        line-height: 1.4;
     }
 }
 
