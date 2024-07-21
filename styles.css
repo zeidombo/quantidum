@@ -1,6 +1,9 @@
+/* Import Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 /* General styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -113,6 +116,15 @@ main {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 1em;
+    text-align: justify;
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+.container p {
+    font-size: 1.3em;
+    color: #000;
+    margin-bottom: 1.5em;
 }
 
 .banner {
@@ -321,8 +333,8 @@ footer {
 .contact-form label {
     display: block;
     margin-bottom: 0.5em;
-    font-size: 1.2em;
-    color: #333;
+    font-size: 1.1em;
+    color: #000;
 }
 
 .contact-form input,
@@ -396,7 +408,7 @@ footer {
 .team h2 {
     text-align: center;
     font-size: 2em;
-    color: #333;
+    color: #000;
     margin-bottom: 1em;
 }
 
@@ -437,7 +449,7 @@ footer {
     font-size: 1em;
     color: #333;
     margin-top: 0.5em;
-    font-family: 'CoolFont', Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
 }
 
 /* Responsive styles */
